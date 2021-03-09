@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selectDropDownList.DropDownList_II">
+      <class name="selectDropDownList.DropDownList_III">
         <methods>
           <include name="SelectDDValues"/>
         </methods>
-      </class> <!-- selectDropDownList.DropDownList_II -->
+      </class> <!-- selectDropDownList.DropDownList_III -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
