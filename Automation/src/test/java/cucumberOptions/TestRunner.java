@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/java/features",
 		glue = "stepDefinations", // Este es el nombre del paquete 
 		stepNotifications = true, //Para ver los steps en el resultado de JUnit
-		tags="@PortalTest"
+		tags="@PortalTest"//,
+		//plugin= {"pretty","html:target/cucumber"}
 				)
 
 public class TestRunner {
