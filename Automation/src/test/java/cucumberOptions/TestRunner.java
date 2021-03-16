@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/java/features",
 		glue = "stepDefinations", // Este es el nombre del paquete 
 		stepNotifications = true, //Para ver los steps en el resultado de JUnit
-		//tags="@RegresionTest",
+		tags="@RegresionTest",
 		// dryRun=true, -- This action is required to know how many test cases don't have stepDefination
 		monochrome=true, // This plugin is necesary to order the console result
 		strict=true,
