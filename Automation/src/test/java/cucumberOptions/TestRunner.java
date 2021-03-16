@@ -11,8 +11,13 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/java/features",
 		glue = "stepDefinations", // Este es el nombre del paquete 
 		stepNotifications = true, //Para ver los steps en el resultado de JUnit
-		tags="@PortalTest"//,
-		//plugin= {"pretty","html:target/cucumber"}
+		//tags="@RegresionTest",
+		// dryRun=true, -- This action is required to know how many test cases don't have stepDefination
+		monochrome=true, // This plugin is necesary to order the console result
+		strict=true,
+		plugin= {"pretty","html:target/cucumber.html", // All of these are reports
+				 "json:target/cucumber.json",
+				 "junit:target/cukes.xml"}
 				)
 
 public class TestRunner {

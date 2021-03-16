@@ -1,9 +1,10 @@
 package stepDefinations;
 
+import Cucumber.Automation.Base;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class Hooks {
+public class Hooks extends Base{
 
 	@Before("@MobileTest")
 	public void beforevalidation() 
@@ -23,9 +24,15 @@ public class Hooks {
 		System.out.println("----  Before Web Hook");
 	}
 
-	@After("@WebTest")
+	@After("@SmokeTest")
 	public void afterWebvalidation() 
 	{
-		System.out.println("****  After web Hook");
+		driver.close();
+	}
+	
+	@After("@RegresionTest")
+	public void afterWebCheckOut() 
+	{
+		driver.close();
 	}
 }
